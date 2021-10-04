@@ -11,7 +11,7 @@ const { Title } = Typography;
 const Homepage = () => {
   const { data, isFetching } = useGetCryptosQuery(10);
   const globalStats = data?.data?.stats;
-  console.log(data);
+  //console.log(data);
 
   if (isFetching) return "Loading..";
   return (
@@ -62,7 +62,7 @@ const Homepage = () => {
           Latesht Crypto News
         </Title>
         <Title level={3} className="show-more">
-          <Link to="/cryptocurrencies">Show More</Link>
+          <Link to="/news">Show More</Link>
         </Title>
       </div>
       <News simplified />
